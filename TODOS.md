@@ -151,3 +151,5 @@ Tracked work, organized by component then priority (P0 highest → P4 lowest). S
 
 - **Drag M around circle, project to circle constraint** — `src/components/inscribed-angle.ts` + `src/geom-engine/circle.ts:projectToCircle`. **Completed:** v0.0.2.0 (2026-04-29)
 - **TheoremCanvas primitive first cut** — vanilla TS in Astro `<script>` tag, AbortController teardown on `astro:before-swap`. **Completed:** v0.0.2.0 (2026-04-29). Note: built directly in Astro rather than as a single HTML prototype first; the inscribed-angle pattern proved the shape, and the next module (lớp 7 / 8) will reuse this pattern.
+- **SSS detector** — `src/geom-engine/triangle.ts:congruentSSS` with position-strict semantics. 10 unit tests including symmetry and EPSILON tolerance. **Completed:** v0.0.3.0 (2026-04-30)
+- **SGK tick-mark encoding** — 1/2/3 ticks paired with the locked 3-color palette, rendered live during drag. Wired in Module 1 (Tam giác bằng nhau). **Completed:** v0.0.3.0 (2026-04-30). Tick rendering helper in `src/components/congruence-sss.ts:renderTicks` is reusable for future modules.
